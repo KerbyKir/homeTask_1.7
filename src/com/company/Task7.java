@@ -14,8 +14,9 @@ public class Task7 {
         String string2 = "246";
 
         StringBuilder stringResult = new StringBuilder();
+        int maxLength = Math.max(string1.length(),string2.length());
 
-        for(int i=0; i<Math.max(string1.length(),string2.length());i++) {
+        for(int i=0; i<maxLength;i++) {
             if(i<string1.length()) {
                 stringResult.append(string1.charAt(i));
             }
