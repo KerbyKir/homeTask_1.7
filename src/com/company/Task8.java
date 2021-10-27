@@ -11,7 +11,7 @@ public class Task8 {
         StringBuilder stringResult= new StringBuilder();
 
         for(int i=1;i<string.length();i++){
-            if(string.charAt(i)==string.charAt(i-1) && stringResult.toString().indexOf(string.charAt(i))>-1){
+            if(string.charAt(i)==string.charAt(i-1) && stringResult.toString().indexOf(string.charAt(i))==-1){
                 stringResult.append(string.charAt(i));
             }
         }
